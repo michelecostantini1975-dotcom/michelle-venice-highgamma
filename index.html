@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Michelle in Venice — Exclusive Airbnb apartments in the heart of Venice. Ca' Vedute on the Grand Canal, Ca' Contessa in Dorsoduro. Book your authentic Venetian experience for Carnevale 2026.">
+  <meta name="keywords" content="Venice apartments, Airbnb Venice, Grand Canal apartment, Dorsoduro rental, Carnevale Venice 2026, luxury Venice stay, Michelle in Venice">
+  <meta name="author" content="Michelle in Venice">
+  <meta name="theme-color" content="#0B1D3A">
+  <meta property="og:title" content="Michelle in Venice — Exclusive Venetian Apartments">
+  <meta property="og:description" content="Your home in Venice, like a local's secret. Handpicked historic apartments with personal concierge. Book Carnevale 2026 now.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&q=80&auto=format">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Michelle in Venice — Exclusive Venetian Apartments">
+  <meta name="twitter:description" content="Your home in Venice, like a local's secret. Book Carnevale 2026 now.">
+  <link rel="canonical" href="https://michelle-venice-highgamma.netlify.app/">
+  <title>Michelle in Venice — Exclusive Venetian Apartments | Carnevale 2026</title>
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== CSS Reset & Variables ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --color-midnight: #0B1D3A;
+      --color-navy: #1A2E50;
+      --color-gold: #C9A96E;
+      --color-gold-light: #D4BA8A;
+      --color-cream: #FAF6F0;
+      --color-warm-white: #FEFCF9;
+      --color-stone: #8A8578;
+      --color-text: #2C2C2C;
+      --color-text-light: #6B6B6B;
+      --color-overlay: rgba(11, 29, 58, 0.55);
+
+      --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+      --font-sans: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+
+      --section-padding: clamp(4rem, 8vw, 8rem);
+      --container-width: min(90%, 1200px);
+      --transition-smooth: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--color-text);
+      background: var(--color-warm-white);
+      line-height: 1.7;
+      font-weight: 300;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ===== Utility ===== */
+    .container { width: var(--container-width); margin: 0 auto; }
+
+    .section-label {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--color-midnight);
+      margin-bottom: 1.5rem;
+    }
+
+    .section-text {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--color-text-light);
+      max-width: 600px;
+    }
+
+    .gold-line {
+      width: 50px;
+      height: 1px;
+      background: var(--color-gold);
+      margin: 2rem 0;
+    }
+
+    /* ===== Animations ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.15s; }
+    .reveal-delay-2 { transition-delay: 0.3s; }
+    .reveal-delay-3 { transition-delay: 0.45s; }
+
+    /* ===== Language Toggle ===== */
+    [data-lang="en"] { display: none; }
+    html[lang="en"] [data-lang="en"] { display: initial; }
+    html[lang="en"] [data-lang="it"] { display: none; }
+    html[lang="it"] [data-lang="it"] { display: initial; }
+    html[lang="it"] [data-lang="en"] { display: none; }
+
+    /* block-level lang elements */
+    div[data-lang="en"], p[data-lang="en"], h1[data-lang="en"],
+    h2[data-lang="en"], h3[data-lang="en"], li[data-lang="en"],
+    blockquote[data-lang="en"], label[data-lang="en"] { display: none; }
+    html[lang="en"] div[data-lang="en"], html[lang="en"] p[data-lang="en"],
+    html[lang="en"] h1[data-lang="en"], html[lang="en"] h2[data-lang="en"],
+    html[lang="en"] h3[data-lang="en"], html[lang="en"] li[data-lang="en"],
+    html[lang="en"] blockquote[data-lang="en"], html[lang="en"] label[data-lang="en"] { display: block; }
+    html[lang="en"] div[data-lang="it"], html[lang="en"] p[data-lang="it"],
+    html[lang="en"] h1[data-lang="it"], html[lang="en"] h2[data-lang="it"],
+    html[lang="en"] h3[data-lang="it"], html[lang="en"] li[data-lang="it"],
+    html[lang="en"] blockquote[data-lang="it"], html[lang="en"] label[data-lang="it"] { display: none; }
+
+    /* flex items */
+    html[lang="en"] li[data-lang="en"] { display: flex; }
+    html[lang="it"] li[data-lang="it"] { display: flex; }
+
+    /* ===== Navigation ===== */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1.2rem 0;
+      transition: background var(--transition-smooth), padding 0.4s ease, box-shadow 0.4s ease;
+    }
+    .nav.scrolled {
+      background: rgba(254, 252, 249, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 0.8rem 0;
+      box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: var(--container-width);
+      margin: 0 auto;
+    }
+    .nav-logo {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: 0.02em;
+      transition: color var(--transition-smooth);
+    }
+    .nav-logo .logo-accent { color: var(--color-gold-light); }
+    .nav.scrolled .nav-logo { color: var(--color-midnight); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav-links a {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 400;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--color-gold);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .nav.scrolled .nav-links a { color: var(--color-text-light); }
+    .nav.scrolled .nav-links a:hover { color: var(--color-midnight); }
+
+    .lang-toggle {
+      background: none;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: rgba(255, 255, 255, 0.85);
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.8rem;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      font-weight: 400;
+    }
+    .lang-toggle:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+    .nav.scrolled .lang-toggle {
+      border-color: var(--color-gold);
+      color: var(--color-gold);
+    }
+    .nav.scrolled .lang-toggle:hover {
+      background: var(--color-gold);
+      color: #fff;
+    }
+
+    /* Mobile menu */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-hamburger span {
+      width: 24px;
+      height: 1.5px;
+      background: #fff;
+      transition: all 0.3s ease;
+    }
+    .nav.scrolled .nav-hamburger span { background: var(--color-midnight); }
+
+    @media (max-width: 768px) {
+      .nav-hamburger { display: flex; }
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        max-width: 320px;
+        height: 100vh;
+        background: var(--color-midnight);
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
+        transition: right 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        padding: 2rem;
+      }
+      .nav-links.open { right: 0; }
+      .nav-links a { color: rgba(255, 255, 255, 0.85) !important; font-size: 0.85rem; }
+      .nav-links .lang-toggle {
+        border-color: rgba(255, 255, 255, 0.4) !important;
+        color: rgba(255, 255, 255, 0.85) !important;
+      }
+      .mobile-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+        z-index: 999;
+      }
+      .mobile-overlay.active { opacity: 1; pointer-events: all; }
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(11,29,58,0.3) 0%, rgba(11,29,58,0.15) 40%, rgba(11,29,58,0.5) 100%),
+        url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1920&q=80&auto=format') center/cover no-repeat;
+      transform: scale(1.05);
+      transition: transform 12s ease;
+    }
+    .hero.loaded .hero-bg { transform: scale(1); }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 800px;
+      padding: 0 1.5rem;
+    }
+    .hero-canoe {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeIn 1.2s 0.3s ease forwards;
+    }
+    .hero-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 5.5vw, 4rem);
+      font-weight: 300;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: slideUp 1s 0.5s ease forwards;
+    }
+    .hero-headline em {
+      font-style: italic;
+      color: var(--color-gold-light);
+    }
+    .hero-sub {
+      font-family: var(--font-sans);
+      font-size: clamp(0.85rem, 1.5vw, 1rem);
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: slideUp 1s 0.7s ease forwards;
+    }
+    .hero-cta {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #fff;
+      border: 1px solid rgba(201, 169, 110, 0.6);
+      padding: 1rem 2.8rem;
+      transition: all 0.4s ease;
+      opacity: 0;
+      animation: slideUp 1s 0.9s ease forwards;
+    }
+    .hero-cta:hover {
+      background: var(--color-gold);
+      border-color: var(--color-gold);
+      color: var(--color-midnight);
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      animation: fadeIn 1s 1.5s ease forwards;
+      opacity: 0;
+    }
+    .hero-scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+      animation: scrollPulse 2s ease infinite;
+    }
+
+    @keyframes fadeIn { to { opacity: 1; } }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
+    /* ===== Intro Section ===== */
+    .intro {
+      padding: var(--section-padding) 0;
+      background: var(--color-warm-white);
+    }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .intro-image {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+    }
+    .intro-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    .intro-image:hover img { transform: scale(1.03); }
+    .intro-image-accent {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: 80px;
+      height: 80px;
+      border-top: 1px solid var(--color-gold);
+      border-left: 1px solid var(--color-gold);
+    }
+
+    @media (max-width: 768px) {
+      .intro-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .intro-image { max-width: 85%; margin: 0 auto; }
+    }
+
+    /* ===== Experience Section ===== */
+    .experience {
+      padding: var(--section-padding) 0;
+      background: var(--color-cream);
+    }
+    .experience-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .experience-header .section-text { margin: 0 auto; }
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+    }
+    .experience-card {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      background: var(--color-warm-white);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    }
+    .experience-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 1.5rem;
+      color: var(--color-gold);
+    }
+    .experience-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--color-midnight);
+      margin-bottom: 1rem;
+    }
+    .experience-card p {
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .experience-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+    }
+
+    /* ===== Properties Section ===== */
+    .properties {
+      padding: var(--section-padding) 0;
+      background: var(--color-warm-white);
+    }
+    .properties-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .properties-header .section-text { margin: 0 auto; }
+
+    .property-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 5rem;
+      align-items: center;
+    }
+    .property-card:last-child { margin-bottom: 0; }
+    .property-card.reverse .property-images { order: 2; }
+    .property-card.reverse .property-info { order: 1; }
+
+    .property-images {
+      position: relative;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+    }
+    .property-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    .property-images:hover img { transform: scale(1.03); }
+
+    .property-badge {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      background: var(--color-midnight);
+      color: var(--color-gold-light);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      font-family: var(--font-sans);
+      font-weight: 500;
+    }
+
+    .property-info h3 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 300;
+      color: var(--color-midnight);
+      margin-bottom: 0.5rem;
+    }
+    .property-location {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+    .property-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-light);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .property-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .property-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--color-stone);
+    }
+    .property-feature svg {
+      width: 16px;
+      height: 16px;
+      color: var(--color-gold);
+      flex-shrink: 0;
+    }
+    .property-link {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-midnight);
+      border-bottom: 1px solid var(--color-gold);
+      padding-bottom: 2px;
+      transition: color 0.3s ease;
+      font-weight: 500;
+    }
+    .property-link:hover { color: var(--color-gold); }
+
+    @media (max-width: 768px) {
+      .property-card { grid-template-columns: 1fr; gap: 2rem; }
+      .property-card.reverse .property-images { order: 0; }
+      .property-card.reverse .property-info { order: 0; }
+    }
+
+    /* ===== Venetian Quote Section ===== */
+    .venetian-quote {
+      padding: var(--section-padding) 0;
+      background: var(--color-midnight);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .venetian-quote::before {
+      content: '\201C';
+      position: absolute;
+      top: -0.2em;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--font-serif);
+      font-size: 20rem;
+      color: rgba(201, 169, 110, 0.05);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .venetian-quote blockquote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.5;
+      max-width: 750px;
+      margin: 0 auto 1.5rem;
+    }
+    .venetian-quote cite {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-gold-light);
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    /* ===== Testimonials Section ===== */
+    .testimonials {
+      padding: var(--section-padding) 0;
+      background: var(--color-cream);
+    }
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .testimonial-card {
+      background: var(--color-warm-white);
+      padding: 2.5rem 2rem;
+      position: relative;
+    }
+    .testimonial-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 1.2rem;
+    }
+    .testimonial-stars svg {
+      width: 14px;
+      height: 14px;
+      color: var(--color-gold);
+    }
+    .testimonial-text {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--color-text);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .testimonial-author {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-stone);
+      font-weight: 500;
+    }
+    .testimonial-origin {
+      font-size: 0.7rem;
+      color: var(--color-text-light);
+      margin-top: 0.2rem;
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+    }
+
+    /* ===== Carnevale Promo Section ===== */
+    .carnevale {
+      padding: var(--section-padding) 0;
+      background: var(--color-warm-white);
+      position: relative;
+      overflow: hidden;
+    }
+    .carnevale-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .carnevale-image {
+      position: relative;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+    }
+    .carnevale-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    .carnevale-image:hover img { transform: scale(1.03); }
+    .carnevale-ribbon {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      background: linear-gradient(135deg, #8B0000, #C41E3A);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.5rem 1.2rem;
+      font-weight: 500;
+    }
+    .carnevale-info .section-title em {
+      background: linear-gradient(135deg, var(--color-gold), #8B0000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .carnevale-dates {
+      display: flex;
+      gap: 2rem;
+      margin: 1.5rem 0 2rem;
+      flex-wrap: wrap;
+    }
+    .carnevale-date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      border: 1px solid rgba(201, 169, 110, 0.3);
+      min-width: 120px;
+    }
+    .carnevale-date-day {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--color-gold);
+      line-height: 1;
+    }
+    .carnevale-date-month {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-text-light);
+      margin-top: 0.3rem;
+    }
+    .carnevale-date-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-stone);
+      margin-top: 0.5rem;
+    }
+    .carnevale-cta {
+      display: inline-block;
+      background: var(--color-midnight);
+      color: var(--color-gold-light);
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      padding: 1rem 2.5rem;
+      border: 1px solid var(--color-midnight);
+      transition: all 0.4s ease;
+      font-weight: 400;
+    }
+    .carnevale-cta:hover {
+      background: var(--color-gold);
+      border-color: var(--color-gold);
+      color: var(--color-midnight);
+    }
+    .carnevale-urgency {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      color: #8B0000;
+      font-weight: 400;
+    }
+    .carnevale-urgency-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #C41E3A;
+      animation: urgencyPulse 1.5s ease infinite;
+    }
+    @keyframes urgencyPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+
+    @media (max-width: 768px) {
+      .carnevale-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .carnevale-dates { gap: 1rem; }
+      .carnevale-date { min-width: 100px; }
+    }
+
+    /* ===== Scarcity Banner ===== */
+    .scarcity {
+      padding: 3rem 0;
+      background: var(--color-warm-white);
+      text-align: center;
+      border-top: 1px solid rgba(201, 169, 110, 0.15);
+      border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+    }
+    .scarcity-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+    .scarcity-item {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .scarcity-number {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--color-gold);
+      line-height: 1;
+    }
+    .scarcity-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-light);
+      text-align: left;
+      line-height: 1.4;
+    }
+    .scarcity-divider {
+      width: 1px;
+      height: 40px;
+      background: rgba(201, 169, 110, 0.3);
+    }
+
+    @media (max-width: 600px) {
+      .scarcity-divider { display: none; }
+      .scarcity-inner { flex-direction: column; gap: 1.5rem; }
+    }
+
+    /* ===== Contact Section ===== */
+    .contact {
+      padding: var(--section-padding) 0;
+      background: var(--color-midnight);
+      color: #fff;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .contact-info .section-label { color: var(--color-gold-light); }
+    .contact-info .section-title { color: #fff; }
+    .contact-info .section-text { color: rgba(255, 255, 255, 0.6); }
+
+    .contact-channels {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .contact-channel {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .contact-channel-icon {
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(201, 169, 110, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-channel-icon svg {
+      width: 18px;
+      height: 18px;
+      color: var(--color-gold-light);
+    }
+    .contact-channel-text {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .contact-channel-text a {
+      color: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid var(--color-gold);
+      transition: color 0.3s ease;
+    }
+    .contact-channel-text a:hover { color: var(--color-gold-light); }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-group label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.4);
+      font-weight: 400;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #fff;
+      padding: 0.9rem 1rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 300;
+      transition: border-color 0.3s ease;
+      outline: none;
+      border-radius: 0;
+      -webkit-appearance: none;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255, 255, 255, 0.25);
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--color-gold);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-group select option { background: var(--color-midnight); color: #fff; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+
+    .form-submit {
+      background: transparent;
+      border: 1px solid var(--color-gold);
+      color: var(--color-gold-light);
+      padding: 1rem 2rem;
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      margin-top: 0.5rem;
+      font-weight: 400;
+    }
+    .form-submit:hover {
+      background: var(--color-gold);
+      color: var(--color-midnight);
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      padding: 2.5rem 0;
+      background: #071428;
+      text-align: center;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-brand {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .footer-links a {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.35);
+      transition: color 0.3s ease;
+    }
+    .footer-links a:hover { color: var(--color-gold-light); }
+    .footer-copy {
+      width: 100%;
+      text-align: center;
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.2);
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    @media (max-width: 600px) {
+      .footer-inner { flex-direction: column; text-align: center; }
+    }
+
+    /* ===== Smooth parallax ===== */
+    .parallax-img { will-change: transform; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Michelle in Venice",
+    "description": "Exclusive Venetian apartments — Ca' Vedute on the Grand Canal and Ca' Contessa in Dorsoduro. Authentic local experience with personal concierge.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Venice",
+      "addressCountry": "IT"
+    },
+    "email": "info@michelleinveniceapartments.com",
+    "url": "https://michelle-venice-highgamma.netlify.app/"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Michelle in Venice Home">
+        Michelle <span class="logo-accent">in Venice</span>
+      </a>
+      <div class="nav-links" id="navLinks" role="menubar">
+        <a href="#esperienza" role="menuitem">
+          <span data-lang="it">Esperienza</span>
+          <span data-lang="en">Experience</span>
+        </a>
+        <a href="#proprieta" role="menuitem">
+          <span data-lang="it">Proprietà</span>
+          <span data-lang="en">Properties</span>
+        </a>
+        <a href="#carnevale" role="menuitem">
+          <span data-lang="it">Carnevale 2026</span>
+          <span data-lang="en">Carnival 2026</span>
+        </a>
+        <a href="#testimonianze" role="menuitem">
+          <span data-lang="it">Ospiti</span>
+          <span data-lang="en">Guests</span>
+        </a>
+        <a href="#contatti" role="menuitem">
+          <span data-lang="it">Contatti</span>
+          <span data-lang="en">Contact</span>
+        </a>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span data-lang="it">EN</span>
+          <span data-lang="en">IT</span>
+        </button>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero" role="banner">
+    <div class="hero-bg" role="img" aria-label="Venice at dawn with mist over canals"></div>
+    <div class="hero-content">
+      <div class="hero-canoe" aria-hidden="true">🛶</div>
+      <h1 class="hero-headline">
+        <span data-lang="it">La tua casa a Venezia,<br><em>come un segreto locale</em></span>
+        <span data-lang="en">Your home in Venice,<br><em>like a local's secret</em></span>
+      </h1>
+      <p class="hero-sub">
+        <span data-lang="it">Appartamenti esclusivi nel cuore autentico della Serenissima</span>
+        <span data-lang="en">Exclusive apartments in the authentic heart of La Serenissima</span>
+      </p>
+      <a href="#contatti" class="hero-cta">
+        <span data-lang="it">Prenota la tua esperienza</span>
+        <span data-lang="en">Book your experience</span>
+      </a>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span data-lang="it">Scopri</span>
+      <span data-lang="en">Discover</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="intro" aria-labelledby="intro-title">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-image reveal">
+          <div class="intro-image-accent" aria-hidden="true"></div>
+          <img
+            src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=800&q=80&auto=format"
+            alt="Canale veneziano al tramonto con gondola e palazzi storici"
+            loading="lazy"
+            class="parallax-img"
+          >
+        </div>
+        <div class="intro-text">
+          <p class="section-label reveal">
+            <span data-lang="it">Michelle in Venice</span>
+            <span data-lang="en">Michelle in Venice</span>
+          </p>
+          <h2 class="section-title reveal reveal-delay-1" id="intro-title">
+            <span data-lang="it">Venezia non si visita.<br>Si <em>vive</em>.</span>
+            <span data-lang="en">Venice is not visited.<br>It's <em>lived</em>.</span>
+          </h2>
+          <div class="gold-line reveal reveal-delay-1"></div>
+          <p class="section-text reveal reveal-delay-2" data-lang="it">
+            Da oltre quindici anni, apriamo le porte di dimore veneziane autentiche a viaggiatori che cercano qualcosa di più di un semplice soggiorno. I nostri appartamenti sono scelti uno ad uno, in palazzi storici, lontani dai percorsi turistici — perché Venezia si scopre nei suoi silenzi, nei campielli nascosti, nell'aroma del caffè la mattina presto.
+          </p>
+          <p class="section-text reveal reveal-delay-2" data-lang="en">
+            For over fifteen years, we have been opening the doors of authentic Venetian residences to travellers seeking more than a simple stay. Our apartments are individually selected, in historic palazzi, away from tourist routes — because Venice reveals itself in its silences, in hidden squares, in the aroma of coffee early in the morning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience" id="esperienza" aria-labelledby="experience-title">
+    <div class="container">
+      <div class="experience-header">
+        <p class="section-label reveal">
+          <span data-lang="it">L'esperienza</span>
+          <span data-lang="en">The experience</span>
+        </p>
+        <h2 class="section-title reveal reveal-delay-1" id="experience-title">
+          <span data-lang="it">Ogni dettaglio, <em>curato per te</em></span>
+          <span data-lang="en">Every detail, <em>curated for you</em></span>
+        </h2>
+        <p class="section-text reveal reveal-delay-2" data-lang="it">
+          Non offriamo solo un appartamento. Offriamo il privilegio di vivere Venezia come un veneziano.
+        </p>
+        <p class="section-text reveal reveal-delay-2" data-lang="en">
+          We don't just offer an apartment. We offer the privilege of living Venice like a Venetian.
+        </p>
+      </div>
+      <div class="experience-grid">
+
+        <!-- Card 1: Concierge -->
+        <div class="experience-card reveal">
+          <div class="experience-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="14" r="8"/>
+              <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16"/>
+              <path d="M24 26v-4M18 8l6-4 6 4"/>
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="it">Concierge Personale</span>
+            <span data-lang="en">Personal Concierge</span>
+          </h3>
+          <p data-lang="it">Un'assistenza dedicata prima, durante e dopo il vostro soggiorno. Dai trasferimenti privati alle prenotazioni nei ristoranti più autentici.</p>
+          <p data-lang="en">Dedicated assistance before, during and after your stay. From private transfers to reservations at the most authentic restaurants.</p>
+        </div>
+
+        <!-- Card 2: Local Secrets -->
+        <div class="experience-card reveal reveal-delay-1">
+          <div class="experience-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 4L6 14v20l18 10 18-10V14L24 4z"/>
+              <path d="M24 24v20M6 14l18 10 18-10"/>
+              <circle cx="24" cy="20" r="3"/>
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="it">Segreti Veneziani</span>
+            <span data-lang="en">Venetian Secrets</span>
+          </h3>
+          <p data-lang="it">La nostra guida curata vi svela bacari nascosti, botteghe artigiane e percorsi sconosciuti che solo i locali conoscono.</p>
+          <p data-lang="en">Our curated guide reveals hidden bacari, artisan workshops and unknown paths that only locals know.</p>
+        </div>
+
+        <!-- Card 3: Luggage Service -->
+        <div class="experience-card reveal reveal-delay-2">
+          <div class="experience-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="12" y="14" width="24" height="28" rx="2"/>
+              <path d="M18 14V10a6 6 0 0 1 12 0v4"/>
+              <line x1="12" y1="24" x2="36" y2="24"/>
+              <circle cx="24" cy="32" r="2"/>
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="it">Servizio Bagagli</span>
+            <span data-lang="en">Luggage Service</span>
+          </h3>
+          <p data-lang="it">Custodia bagagli presso Hotel Palazzo Vitturi — iniziate a esplorare la città fin dal primo momento, liberi e leggeri.</p>
+          <p data-lang="en">Luggage storage at Hotel Palazzo Vitturi — start exploring the city from the very first moment, free and light.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Properties Section -->
+  <section class="properties" id="proprieta" aria-labelledby="properties-title">
+    <div class="container">
+      <div class="properties-header">
+        <p class="section-label reveal">
+          <span data-lang="it">Le Dimore</span>
+          <span data-lang="en">The Residences</span>
+        </p>
+        <h2 class="section-title reveal reveal-delay-1" id="properties-title">
+          <span data-lang="it">Dimore d'epoca, <em>comfort contemporaneo</em></span>
+          <span data-lang="en">Historic residences, <em>contemporary comfort</em></span>
+        </h2>
+        <p class="section-text reveal reveal-delay-2" data-lang="it">
+          Ogni appartamento racconta la storia di Venezia attraverso i suoi affreschi, le travi a vista e le viste sui canali.
+        </p>
+        <p class="section-text reveal reveal-delay-2" data-lang="en">
+          Each apartment tells the story of Venice through its frescoes, exposed beams and canal views.
+        </p>
+      </div>
+
+      <!-- Property 1: Ca' Vedute -->
+      <article class="property-card reveal">
+        <div class="property-images">
+          <img
+            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80&auto=format"
+            alt="Interno elegante Ca' Vedute con vista canale e arredi veneziani"
+            loading="lazy"
+            class="parallax-img"
+          >
+          <div class="property-badge">
+            <span data-lang="it">Esclusiva</span>
+            <span data-lang="en">Exclusive</span>
+          </div>
+        </div>
+        <div class="property-info">
+          <h3>Ca' Vedute</h3>
+          <p class="property-location">San Marco · Canal Grande</p>
+          <p class="property-desc" data-lang="it">
+            Affacciata direttamente sul Canal Grande, Ca' Vedute è un rifugio di eleganza discreta. Pavimenti in terrazzo veneziano originale, soffitti affrescati e un balcone dove il tempo sembra fermarsi, mentre l'acqua scintilla sotto la luce del mattino.
+          </p>
+          <p class="property-desc" data-lang="en">
+            Overlooking the Grand Canal, Ca' Vedute is a retreat of discreet elegance. Original Venetian terrazzo floors, frescoed ceilings and a balcony where time seems to stand still, as water sparkles in the morning light.
+          </p>
+          <div class="property-features">
+            <div class="property-feature">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="6" width="12" height="8" rx="1"/><path d="M2 9h12"/></svg>
+              <span>2 <span data-lang="it">camere</span><span data-lang="en">bedrooms</span></span>
+            </div>
+            <div class="property-feature">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1" y="8" width="14" height="5" rx="1"/><path d="M3 8V5a5 5 0 0 1 10 0v3"/></svg>
+              <span>2 <span data-lang="it">bagni</span><span data-lang="en">baths</span></span>
+            </div>
+            <div class="property-feature">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 2L2 8l6 6 6-6L8 2z"/><circle cx="8" cy="8" r="1.5"/></svg>
+              <span data-lang="it">Vista Canal Grande</span>
+              <span data-lang="en">Grand Canal view</span>
+            </div>
+          </div>
+          <a href="#contatti" class="property-link">
+            <span data-lang="it">Scopri Ca' Vedute →</span>
+            <span data-lang="en">Discover Ca' Vedute →</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Property 2: Ca' Contessa -->
+      <article class="property-card reverse reveal">
+        <div class="property-images">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&auto=format"
+            alt="Interni raffinati Ca' Contessa con dettagli in oro e tessuti pregiati"
+            loading="lazy"
+            class="parallax-img"
+          >
+          <div class="property-badge">
+            <span data-lang="it">Selezionata</span>
+            <span data-lang="en">Selected</span>
+          </div>
+        </div>
+        <div class="property-info">
+          <h3>Ca' Contessa</h3>
+          <p class="property-location">Dorsoduro · Gallerie dell'Accademia</p>
+          <p class="property-desc" data-lang="it">
+            Nel sestiere più artistico di Venezia, Ca' Contessa è un nido di raffinatezza silenziosa. Travi a vista del '700, tessuti Rubelli e una terrazza altana da cui ammirare i tetti della città al tramonto, con un calice di Prosecco in mano.
+          </p>
+          <p class="property-desc" data-lang="en">
+            In Venice's most artistic district, Ca' Contessa is a haven of quiet refinement. 18th-century exposed beams, Rubelli fabrics and a rooftop altana terrace to admire the city's skyline at sunset, with a glass of Prosecco in hand.
+          </p>
+          <div class="property-features">
+            <div class="property-feature">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="6" width="12" height="8" rx="1"/><path d="M2 9h12"/></svg>
+              <span>1 <span data-lang="it">camera</span><span data-lang="en">bedroom</span></span>
+            </div>
+            <div class="property-feature">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1" y="8" width="14" height="5" rx="1"/><path d="M3 8V5a5 5 0 0 1 10 0v3"/></svg>
+              <span>1 <span data-lang="it">bagno</span><span data-lang="en">bath</span></span>
+            </div>
+            <div class="property-feature">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 14V6l6-4 6 4v8"/><path d="M6 14V9h4v5"/></svg>
+              <span data-lang="it">Terrazza Altana</span>
+              <span data-lang="en">Altana Terrace</span>
+            </div>
+          </div>
+          <a href="#contatti" class="property-link">
+            <span data-lang="it">Scopri Ca' Contessa →</span>
+            <span data-lang="en">Discover Ca' Contessa →</span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Venetian Quote -->
+  <section class="venetian-quote" aria-label="Venetian quote">
+    <div class="container">
+      <blockquote class="reveal">
+        <span data-lang="it">"Venezia è come mangiare un'intera scatola di cioccolatini al liquore in una volta sola."</span>
+        <span data-lang="en">"Venice is like eating an entire box of chocolate liqueurs in one go."</span>
+      </blockquote>
+      <cite class="reveal reveal-delay-1">— Truman Capote</cite>
+    </div>
+  </section>
+
+  <!-- Carnevale 2026 Promo -->
+  <section class="carnevale" id="carnevale" aria-labelledby="carnevale-title">
+    <div class="container">
+      <div class="carnevale-grid">
+        <div class="carnevale-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1551524559-8af4e6624178?w=900&q=80&auto=format"
+            alt="Maschere veneziane al Carnevale di Venezia con costume elaborato dorato"
+            loading="lazy"
+            class="parallax-img"
+          >
+          <div class="carnevale-ribbon">
+            <span data-lang="it">Posti Limitati</span>
+            <span data-lang="en">Limited Availability</span>
+          </div>
+        </div>
+        <div class="carnevale-info">
+          <p class="section-label reveal">
+            <span data-lang="it">Evento Speciale</span>
+            <span data-lang="en">Special Event</span>
+          </p>
+          <h2 class="section-title reveal reveal-delay-1" id="carnevale-title">
+            <span data-lang="it">Carnevale di Venezia 2026:<br><em>Vivi la magia</em></span>
+            <span data-lang="en">Venice Carnival 2026:<br><em>Live the magic</em></span>
+          </h2>
+          <p class="section-text reveal reveal-delay-2" data-lang="it">
+            Soggiorna nel cuore della Serenissima durante il periodo più magico dell'anno. Svegliatevi con il suono delle feste nei campi, passeggiate tra maschere e costumi d'epoca, e tornate nella vostra dimora veneziana per un calice di Prosecco al tramonto.
+          </p>
+          <p class="section-text reveal reveal-delay-2" data-lang="en">
+            Stay in the heart of La Serenissima during the most magical time of year. Wake to the sound of celebrations in the campos, stroll among masks and period costumes, and return to your Venetian residence for a glass of Prosecco at sunset.
+          </p>
+          <div class="carnevale-dates reveal reveal-delay-2">
+            <div class="carnevale-date">
+              <span class="carnevale-date-day">7</span>
+              <span class="carnevale-date-month">
+                <span data-lang="it">Feb</span>
+                <span data-lang="en">Feb</span>
+              </span>
+              <span class="carnevale-date-label">
+                <span data-lang="it">Inizio</span>
+                <span data-lang="en">Start</span>
+              </span>
+            </div>
+            <div class="carnevale-date">
+              <span class="carnevale-date-day">17</span>
+              <span class="carnevale-date-month">
+                <span data-lang="it">Feb</span>
+                <span data-lang="en">Feb</span>
+              </span>
+              <span class="carnevale-date-label">
+                <span data-lang="it">Fine</span>
+                <span data-lang="en">End</span>
+              </span>
+            </div>
+          </div>
+          <a href="#contatti" class="carnevale-cta reveal reveal-delay-3">
+            <span data-lang="it">Prenota per Carnevale</span>
+            <span data-lang="en">Book for Carnival</span>
+          </a>
+          <div class="carnevale-urgency reveal reveal-delay-3">
+            <span class="carnevale-urgency-dot" aria-hidden="true"></span>
+            <span data-lang="it">Solo poche date ancora disponibili</span>
+            <span data-lang="en">Only a few dates still available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonianze" aria-labelledby="testimonials-title">
+    <div class="container">
+      <div class="testimonials-header">
+        <p class="section-label reveal">
+          <span data-lang="it">I Nostri Ospiti</span>
+          <span data-lang="en">Our Guests</span>
+        </p>
+        <h2 class="section-title reveal reveal-delay-1" id="testimonials-title">
+          <span data-lang="it">Storie di chi ha <em>vissuto Venezia</em></span>
+          <span data-lang="en">Stories from those who <em>lived Venice</em></span>
+        </h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars" aria-label="5 stars">
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+          </div>
+          <p class="testimonial-text" data-lang="it">"Non era un appartamento — era una finestra sulla Venezia vera. La mattina, il silenzio dell'acqua. La sera, i tramonti dal balcone. Michelle ha reso tutto perfetto."</p>
+          <p class="testimonial-text" data-lang="en">"It wasn't an apartment — it was a window onto the real Venice. In the morning, the silence of the water. In the evening, sunsets from the balcony. Michelle made everything perfect."</p>
+          <p class="testimonial-author">Sophie &amp; Laurent</p>
+          <p class="testimonial-origin">Paris, France</p>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars" aria-label="5 stars">
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+          </div>
+          <p class="testimonial-text" data-lang="it">"Il consiglio del bacaro segreto vicino a Rialto è stato il momento più bello del nostro viaggio. La guida di Michelle vale più di qualsiasi concierge d'hotel."</p>
+          <p class="testimonial-text" data-lang="en">"The tip about the secret bacaro near Rialto was the highlight of our trip. Michelle's guidance is worth more than any hotel concierge."</p>
+          <p class="testimonial-author">James &amp; Emily</p>
+          <p class="testimonial-origin">London, UK</p>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars" aria-label="5 stars">
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+            <svg viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l2.2 4.4L14 5.1l-3.5 3.4.8 4.9L7 11.2 2.7 13.4l.8-4.9L0 5.1l4.8-.7z"/></svg>
+          </div>
+          <p class="testimonial-text" data-lang="it">"Abbiamo cercato per anni l'esperienza veneziana autentica. Qui l'abbiamo trovata. Il palazzo, la vista, l'attenzione — tutto sussurra lusso senza gridarlo."</p>
+          <p class="testimonial-text" data-lang="en">"We searched for years for the authentic Venetian experience. Here we found it. The palazzo, the view, the attention — everything whispers luxury without shouting it."</p>
+          <p class="testimonial-author">Hans &amp; Petra</p>
+          <p class="testimonial-origin">Munich, Germany</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Scarcity Banner -->
+  <section class="scarcity reveal" aria-label="Key numbers">
+    <div class="container">
+      <div class="scarcity-inner">
+        <div class="scarcity-item">
+          <span class="scarcity-number">2</span>
+          <span class="scarcity-label">
+            <span data-lang="it">Dimore esclusive<br>selezionate</span>
+            <span data-lang="en">Exclusive residences<br>hand-selected</span>
+          </span>
+        </div>
+        <div class="scarcity-divider" aria-hidden="true"></div>
+        <div class="scarcity-item">
+          <span class="scarcity-number">15+</span>
+          <span class="scarcity-label">
+            <span data-lang="it">Anni di ospitalità<br>veneziana</span>
+            <span data-lang="en">Years of Venetian<br>hospitality</span>
+          </span>
+        </div>
+        <div class="scarcity-divider" aria-hidden="true"></div>
+        <div class="scarcity-item">
+          <span class="scarcity-number">98%</span>
+          <span class="scarcity-label">
+            <span data-lang="it">Ospiti che<br>ritornano</span>
+            <span data-lang="en">Guests who<br>return</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contatti" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-label reveal">
+            <span data-lang="it">Contatti</span>
+            <span data-lang="en">Contact</span>
+          </p>
+          <h2 class="section-title reveal reveal-delay-1" id="contact-title">
+            <span data-lang="it">Inizia il tuo viaggio <em>veneziano</em></span>
+            <span data-lang="en">Begin your <em>Venetian</em> journey</span>
+          </h2>
+          <p class="section-text reveal reveal-delay-2" data-lang="it">
+            Raccontaci il soggiorno che immagini. Michelle ti risponderà personalmente per creare un'esperienza su misura.
+          </p>
+          <p class="section-text reveal reveal-delay-2" data-lang="en">
+            Tell us about the stay you envision. Michelle will reply personally to create a bespoke experience.
+          </p>
+
+          <div class="contact-channels reveal reveal-delay-2">
+            <div class="contact-channel">
+              <div class="contact-channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/>
+                </svg>
+              </div>
+              <div class="contact-channel-text">
+                <a href="mailto:info@michelleinveniceapartments.com">info@michelleinveniceapartments.com</a>
+              </div>
+            </div>
+            <div class="contact-channel">
+              <div class="contact-channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+              </div>
+              <div class="contact-channel-text">
+                <span data-lang="it">WhatsApp: </span>
+                <span data-lang="en">WhatsApp: </span>
+                <a href="https://wa.me/393401234567" target="_blank" rel="noopener">+39 340 123 4567</a>
+              </div>
+            </div>
+            <div class="contact-channel">
+              <div class="contact-channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-channel-text">
+                Venezia, Italia
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate aria-label="Contact form">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="form-group" style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname" data-lang="it">Nome</label>
+              <label for="fname" data-lang="en">First Name</label>
+              <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+            </div>
+            <div class="form-group">
+              <label for="lname" data-lang="it">Cognome</label>
+              <label for="lname" data-lang="en">Last Name</label>
+              <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin" data-lang="it">Arrivo</label>
+              <label for="checkin" data-lang="en">Check-in</label>
+              <input type="date" id="checkin" name="checkin">
+            </div>
+            <div class="form-group">
+              <label for="checkout" data-lang="it">Partenza</label>
+              <label for="checkout" data-lang="en">Check-out</label>
+              <input type="date" id="checkout" name="checkout">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="property" data-lang="it">Proprietà preferita</label>
+            <label for="property" data-lang="en">Preferred property</label>
+            <select id="property" name="property">
+              <option value="" data-lang="it">Seleziona...</option>
+              <option value="" data-lang="en">Select...</option>
+              <option value="ca-vedute">Ca' Vedute — San Marco</option>
+              <option value="ca-contessa">Ca' Contessa — Dorsoduro</option>
+              <option value="both" data-lang="it">Entrambe / Non so ancora</option>
+              <option value="both" data-lang="en">Both / Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-lang="it">Il tuo soggiorno ideale</label>
+            <label for="message" data-lang="en">Your ideal stay</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <span data-lang="it">Prenota la tua esperienza</span>
+            <span data-lang="en">Book your experience</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">Michelle <span style="color:var(--color-gold-light)">in Venice</span></div>
+        <div class="footer-links">
+          <a href="https://michelleinveniceapartments.com/" target="_blank" rel="noopener">
+            <span data-lang="it">Sito Principale</span>
+            <span data-lang="en">Main Website</span>
+          </a>
+          <a href="#contatti">
+            <span data-lang="it">Contatti</span>
+            <span data-lang="en">Contact</span>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 Michelle in Venice Apartments. <span data-lang="it">Tutti i diritti riservati.</span><span data-lang="en">All rights reserved.</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    (function() {
+      'use strict';
+
+      /* === Language Toggle === */
+      var langToggle = document.getElementById('langToggle');
+      var htmlEl = document.documentElement;
+
+      langToggle.addEventListener('click', function() {
+        var current = htmlEl.getAttribute('lang');
+        var next = current === 'it' ? 'en' : 'it';
+        htmlEl.setAttribute('lang', next);
+        localStorage.setItem('miv-lang', next);
+      });
+
+      // Restore saved language
+      var saved = localStorage.getItem('miv-lang');
+      if (saved && (saved === 'it' || saved === 'en')) {
+        htmlEl.setAttribute('lang', saved);
+      }
+
+      /* === Mobile Navigation === */
+      var hamburger = document.getElementById('navHamburger');
+      var navLinks = document.getElementById('navLinks');
+      var overlay = document.getElementById('mobileOverlay');
+
+      function toggleMobileNav() {
+        var isOpen = navLinks.classList.contains('open');
+        navLinks.classList.toggle('open');
+        overlay.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', !isOpen);
+      }
+
+      function closeMobileNav() {
+        navLinks.classList.remove('open');
+        overlay.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+
+      hamburger.addEventListener('click', toggleMobileNav);
+      overlay.addEventListener('click', closeMobileNav);
+
+      // Close mobile nav on link click
+      navLinks.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', closeMobileNav);
+      });
+
+      /* === Sticky Nav Background === */
+      var nav = document.getElementById('mainNav');
+      var scrollThreshold = 80;
+
+      function handleScroll() {
+        if (window.scrollY > scrollThreshold) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      }
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+
+      /* === Hero Load Animation === */
+      var hero = document.getElementById('hero');
+      window.addEventListener('load', function() {
+        hero.classList.add('loaded');
+      });
+
+      /* === Scroll Reveal (IntersectionObserver) === */
+      var reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        reveals.forEach(function(el) { observer.observe(el); });
+      } else {
+        // Fallback: show everything
+        reveals.forEach(function(el) { el.classList.add('visible'); });
+      }
+
+      /* === Subtle Parallax on images === */
+      var parallaxImages = document.querySelectorAll('.parallax-img');
+      if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches && parallaxImages.length) {
+        var ticking = false;
+        window.addEventListener('scroll', function() {
+          if (!ticking) {
+            requestAnimationFrame(function() {
+              parallaxImages.forEach(function(img) {
+                var rect = img.getBoundingClientRect();
+                var viewH = window.innerHeight;
+                if (rect.top < viewH && rect.bottom > 0) {
+                  var progress = (rect.top + rect.height / 2) / viewH;
+                  var offset = (progress - 0.5) * 30;
+                  img.style.transform = 'translateY(' + offset + 'px) scale(1.03)';
+                }
+              });
+              ticking = false;
+            });
+            ticking = true;
+          }
+        }, { passive: true });
+      }
+
+      /* === Form handling (Netlify Forms) === */
+      var form = document.getElementById('contactForm');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var data = new FormData(form);
+        var values = {};
+        data.forEach(function(v, k) { values[k] = v; });
+        var lang = htmlEl.getAttribute('lang');
+
+        // Validate required fields
+        if (!values.fname || !values.email) {
+          alert(lang === 'it'
+            ? 'Per favore compila nome ed email.'
+            : 'Please fill in your name and email.');
+          return;
+        }
+
+        var btn = form.querySelector('.form-submit');
+        var origText = btn.innerHTML;
+        btn.innerHTML = lang === 'it' ? '<span>Invio in corso...</span>' : '<span>Sending...</span>';
+        btn.style.pointerEvents = 'none';
+
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(data).toString()
+        }).then(function(res) {
+          if (res.ok) {
+            btn.innerHTML = lang === 'it'
+              ? '<span>Grazie! Ti contatteremo presto</span>'
+              : '<span>Thank you! We\'ll be in touch soon</span>';
+            btn.style.background = 'var(--color-gold)';
+            btn.style.color = 'var(--color-midnight)';
+            form.reset();
+            setTimeout(function() {
+              btn.innerHTML = origText;
+              btn.style.background = '';
+              btn.style.color = '';
+              btn.style.pointerEvents = '';
+            }, 4000);
+          } else {
+            throw new Error('Network response was not ok');
+          }
+        }).catch(function() {
+          btn.innerHTML = lang === 'it'
+            ? '<span>Errore. Riprova.</span>'
+            : '<span>Error. Please try again.</span>';
+          btn.style.background = '#8B0000';
+          btn.style.color = '#fff';
+          setTimeout(function() {
+            btn.innerHTML = origText;
+            btn.style.background = '';
+            btn.style.color = '';
+            btn.style.pointerEvents = '';
+          }, 3000);
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
