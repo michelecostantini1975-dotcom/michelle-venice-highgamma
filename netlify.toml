@@ -1,8 +1,8 @@
 [build]
-  publish = &quot;.&quot;
+  publish = "."
 
 [[headers]]
-  for = &quot;/*&quot;
+  for = "/*"
   [headers.values]
-    X-Frame-Options = &quot;DENY&quot;
-    X-Content-Type-Options = &quot;nosniff&quot;
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
